@@ -3,7 +3,9 @@
     <head>
         <title></title>
         <style>
-
+            table{
+                border: 1px dotted red;
+            }
         </style>
     </head>
     <body>
