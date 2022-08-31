@@ -10,6 +10,13 @@
         table{
             border: 1px dotted red;
         }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid #f30b3a;
+        }
     </style>
 </head>
 <body>
@@ -23,30 +30,32 @@
         }else{
 
     %>
-    <form action="ex_login.jsp" method="post">
-        <table>
-            <tr>
-                <th colspan="2">Login System</th>
-            </tr>
-            <tr>
-                <th>Username : </th>
-                <td>
-                    <input type="text" name="Username">
-                </td>
-            </tr>
-            <tr>
-                <th>Password : </th>
-                <td>
-                    <input type="password" name="Password">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" name="Submit" value="Login">
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div>
+        <form action="ex_login.jsp" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Login System</th>
+                </tr>
+                <tr>
+                    <th>Username : </th>
+                    <td>
+                        <input type="text" name="Username">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password : </th>
+                    <td>
+                        <input type="password" name="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="Submit" value="Login">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
     <% } %>
 </body>
 </html>
