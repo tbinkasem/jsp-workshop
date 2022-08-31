@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="showtext.jsp" method="post">
+        <table>
+            <tr>
+                <td>ชื่อที่ใช้เข้าสู่ระบบ</td>
+                <td>
+                    <input type="text" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>รหัสผ่าน</td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td>
+                    <textarea name="address" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>สถานภาพ</td>
+                <td>
+                    <!-- <input type="radio" name="status" value="1">นักศึกษา<br>
+                    <input type="radio" name="status" value="2">ครู-เจ้าหน้าที่<br>
+                    <input type="radio" name="status" value="3">ผู้ดูแลระบบ -->
+
+                    <input type="radio" name="status" value="นักศึกษา">นักศึกษา<br>
+                    <input type="radio" name="status" value="ครู-เจ้าหน้าที่">ครู-เจ้าหน้าที่<br>
+                    <input type="radio" name="status" value="ผู้ดูแลระบบ">ผู้ดูแลระบบ
+                </td>
+            </tr>
+            <tr>
+                <td>งานที่รับผิดชอบ</td>
+                <td>
+                    <input type="checkbox" name="work" value="งานบริหารทรัพยากร"> งานบริหารทรัพยากร <br>
+                    <input type="checkbox" name="work" value="งานวิชาการ"> งานวิชาการ <br>
+                    <input type="checkbox" name="work" value="งานแผนงานและความร่วมมือ"> งานแผนงานและความร่วมมือ <br>
+                    <input type="checkbox" name="work" value="งานพัฒนากิจการนักเรียน นักศึกษา"> งานพัฒนากิจการนักเรียน นักศึกษา
+                </td>
+            </tr>
+            <tr>
+                <td>ระยะเวลาทำงาน</td>
+                <td>                    
+                    <select name="time">
+                        <option value="t1">1-3 ปี</option>
+                        <option value="t2">4-6 ปี</option>
+                        <option value="t3">7-9 ปี</option>
+                        <option value="t4">10 ปีขึ้นไป</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ระยะเวลาทำงานนอกเวลา</td>
+                <td>                    
+                    <select name="overtime" size="4" multiple>
+                        <option value="1-3 ชม.">1-3 ชม.</option>
+                        <option value="4-6 ชม.">4-6 ชม.</option>
+                        <option value="7-9 ชม.">7-9 ชม.</option>
+                        <option value="10 ชม.ขึ้นไป">10 ชม.ขึ้นไป</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="ตกลง">
+                </td>
+            </tr>
+           </table>
+    </form>
+</body>
+</html>
